@@ -1,0 +1,232 @@
+:root {
+  /* Light theme colors */
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --primary-color: #4f46e5; /* biru indigo */
+  --secondary-color: #6b7280; /* abu sedang */
+  --card-bg: #f9fafb;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #e4e4e4;
+  --primary-color: #818cf8; /* biru terang */
+  --secondary-color: #9ca3af; /* abu muda */
+  --card-bg: #1f2937;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  transition: background-color 0.3s ease;
+}
+
+button {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
+  --nav-bg: #eee;
+  --card-bg: #fafafa;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #eee;
+  --nav-bg: #333;
+  --card-bg: #1e1e1e;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: var(--nav-bg);
+  padding: 10px;
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+/* Warna default - Light Mode */
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #222;
+  --nav-bg: #ffffff;
+  --nav-text: #333;
+  --card-bg: #fff;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --button-bg: #007bff;
+  --button-text: #fff;
+  --button-hover-bg: #0056b3;
+}
+
+/* Dark Mode Colors */
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --nav-bg: #1f1f1f;
+  --nav-text: #ddd;
+  --card-bg: #222;
+  --card-shadow: rgba(0, 0, 0, 0.6);
+  --button-bg: #3399ff;
+  --button-text: #121212;
+  --button-hover-bg: #2673cc;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header */
+header {
+  background-color: var(--nav-bg);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 2px 6px var(--card-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Dark mode toggle button */
+header button {
+  cursor: pointer;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 8px 16px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+header button:hover {
+  background-color: var(--button-hover-bg);
+}
+
+/* Navigation bar */
+nav {
+  background-color: var(--nav-bg);
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px 0;
+  box-shadow: 0 2px 4px var(--card-shadow);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+nav a {
+  color: var(--nav-text);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--button-bg);
+  border-bottom: 2px solid var(--button-bg);
+  padding-bottom: 2px;
+}
+
+/* Main container */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Card styling for notes */
+.card {
+  background-color: var(--card-bg);
+  box-shadow: 0 2px 8px var(--card-shadow);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px var(--card-shadow);
+}
+
+/* Judul catatan */
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* Isi catatan */
+.card p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  main {
+    margin: 15px;
+  }
+}
+
+.card {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #333;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.page-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
