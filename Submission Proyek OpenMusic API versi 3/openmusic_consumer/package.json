@@ -1,0 +1,16 @@
+{
+  "name": "openmusic-consumer",
+  "version": "1.0.0",
+  "description": "Consumer untuk fitur ekspor playlist OpenMusic",
+  "main": "consumer.js",
+  "scripts": {
+    "start": "node ./src/consumer.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "axios": "^1.10.0",
+    "dotenv": "^16.0.3",
+    "nodemailer": "^7.0.3",
+    "pg": "^8.16.2"
+  }
+}
