@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catatan Pribadi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Catatan Pribadi</h1>
+
+    <input type="text" class="search" placeholder="🔍 Cari catatan..." />
+    <p class="char-count">Sisa karakter: <span id="charRemaining">50</span></p>
+
+    <div class="form">
+      <input type="text" class="input" placeholder="📌 Judul" />
+      <textarea class="textarea" placeholder="🗒️ Isi catatan"></textarea>
+      <button class="btn-add">+ Tambah Catatan</button>
+    </div>
+
+    <h2>📂 Catatan Aktif</h2>
+
+    <div class="note-card">
+      <h3>Babel</h3>
+      <p class="note-date">14/04/2022</p>
+      <p class="note-content">Babel merupakan tools open-source...</p>
+      <div class="actions">
+        <button class="btn btn-delete">🗑 Hapus</button>
+        <button class="btn btn-archive">📦 Arsipkan</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

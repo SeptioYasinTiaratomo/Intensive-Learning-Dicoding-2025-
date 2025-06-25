@@ -1,0 +1,182 @@
+/* Warna dasar */
+:root {
+  --sky-blue: #e0f2fe;
+  --blue: #2563eb;
+  --dark: #1e293b;
+  --gray: #6b7280;
+  --danger: #ef4444;
+  --warning: #f59e0b;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--sky-blue);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Input & Form */
+.search, .input, .textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.char-count {
+  font-size: 14px;
+  color: var(--gray);
+  margin-bottom: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-add {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-add:hover {
+  background-color: #1d4ed8;
+}
+
+/* Kartu Catatan */
+.note-card {
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s;
+}
+
+.note-card:hover {
+  transform: scale(1.01);
+}
+
+.note-card h3 {
+  margin: 0 0 6px;
+  color: var(--dark);
+}
+
+.note-date {
+  font-size: 14px;
+  color: var(--gray);
+  margin-bottom: 10px;
+}
+
+.note-content {
+  margin-bottom: 16px;
+  color: var(--dark);
+}
+
+/* Tombol Aksi */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+}
+
+.btn-delete {
+  background-color: var(--danger);
+}
+
+.btn-delete:hover {
+  background-color: #dc2626;
+}
+
+.btn-archive {
+  background-color: var(--warning);
+}
+
+.btn-archive:hover {
+  background-color: #d97706;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  width: 90%;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.3);
+}
+
+.btn {
+  transition: background-color 0.3s ease;
+}
+
+h1 span.highlight, h2 span.highlight {
+  font-weight: bold;
+}
+
+.note-empty {
+  text-align: center;
+  color: var(--gray);
+  font-style: italic;
+  margin-top: 20px;
+}
