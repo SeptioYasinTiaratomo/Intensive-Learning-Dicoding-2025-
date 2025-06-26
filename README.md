@@ -70,3 +70,11 @@ npm run migrate up
 
 # Jalankan server
 npm run start
+
+## 📝 License
+
+This repository is licensed under the  
+**Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**  
+You may read the full license in the [LICENSE.md](./LICENSE.md) file or visit the official site:  
+🔗 https://creativecommons.org/licenses/by-nc/4.0
+
