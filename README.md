@@ -1,4 +1,6 @@
 # 🚀 Intensive Learning Dicoding 2025 — React, Back-End, and AI
+![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)
+
 
 📚 Repositori ini adalah dokumentasi lengkap dari hasil pembelajaran intensif selama program **Intensive Learning Dicoding 2025**, meliputi:
 
